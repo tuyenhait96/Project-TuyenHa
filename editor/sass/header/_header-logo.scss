@@ -1,0 +1,26 @@
+// ------ HEADER-MENU: START ------ 
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    div.header-right {
+        padding: 18px 0;
+        display: flex;
+        align-items: center;
+    } 
+}
+div.group-phone{
+    padding-right: 22px;          
+    span.text-phone{
+        @include setFont(12px, $color-black);
+    }
+}
+a.button-yellow{
+    padding: 17px 20px;
+    background-color: $background-button;
+    font-weight: bold;
+    text-decoration: none;
+    @include setFont(14px, $color-button);
+
+}
+// ------ HEADER-MENU: START ------ 

@@ -1,0 +1,19 @@
+.padding-42{
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+.footer-menu {
+    @extend %flex-center;
+    flex-direction: row;
+    li a {
+        @include setFont(12px, $color-grey);
+        padding-left: 22px;
+        padding-right: 22px;
+        border-left: 1px solid $color-grey;
+        line-height: 23.8px;
+
+    }
+    .border-right {
+        border-right: 1px solid $color-grey;
+    }
+}

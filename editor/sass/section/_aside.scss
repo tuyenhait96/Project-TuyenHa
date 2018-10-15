@@ -1,0 +1,32 @@
+.d-flex {
+    display: flex;
+    .aside{
+        width: 443px;   
+    }
+    .aside-left {
+        background: url("../images/banner-aside.png") no-repeat center;
+        height: 387px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        & > img {
+            padding-bottom: 75px;
+        }
+    }
+    .aside-right{
+        @extend %block;
+        padding-left: 67px;
+        > img {
+            margin-top: 65px;
+            margin-bottom: 40px;
+        }
+        > span {
+            @include setFont(16px, $color-grey);
+            line-height: 22.4px;
+        }
+        >a > img  {
+            margin-top: 35px;
+        }
+    }
+}
+

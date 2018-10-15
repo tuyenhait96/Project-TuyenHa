@@ -1,0 +1,47 @@
+// ------------------- HEADER -------------------
+$background-blue: #0f5c9b;
+$background-header: #ffffff;
+$background-button: #ffed4d;
+$background-grey: #eeeeee;
+$color-button: #fd7e00;
+$footer-grey: #cccccc;
+
+$color-grey: #555555;
+$color-white: #ffffff;
+$color-yellow: #ffff4c;
+$color-black: #000000;
+$color-border: #dddddd;
+$color-blue: #0e5b9a;
+
+// ------------------- MIXINS: SET-FONT -------------------
+@mixin setFont($fontSize, $color) {
+    font-size: $fontSize;
+    color: $color;
+    
+}
+
+// ------------------- EXTEND: IMAGE -------------------
+%hover{ 
+    li{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+%block {
+    img{
+        display: block;
+    }
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%border-white{
+    color: $color-white;
+    border: 1px solid $color-white;
+}

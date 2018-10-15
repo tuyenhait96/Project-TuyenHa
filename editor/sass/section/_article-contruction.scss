@@ -1,0 +1,56 @@
+.header-article{
+    >img {
+        display: block;
+        margin: 0 auto;
+        &:first-child{
+            padding-top: 60px;
+            padding-bottom: 18px;
+        }
+    }
+}
+ul.article-content{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 65px;
+    >li{
+        line-height: 22.4px;
+        @include setFont(16px, $color-grey);
+    }
+}
+.bk-image{
+    background: url(../images/border-corner.png) no-repeat;
+    background-size: contain;
+    height: 226px;
+    >img:first-child {
+        padding-top: 43px;
+    }
+    >img:last-child {
+        padding-top: 17px;
+        padding-bottom: 20px;
+    }
+}
+
+.article-home {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    @extend %hover;
+    .img-block {
+        width: 220px;
+        padding-left: 55px;
+        padding-right: 55px;
+        position: relative;
+    }
+}
+.button-article{
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 45px);
+    padding: 10px 25px 10px 12px;
+    background-color: $background-blue;
+    @include setFont(10px, $color-white);
+    text-transform: uppercase;
+    .fa-play {
+        padding-right: 10px;
+    }
+}
